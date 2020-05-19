@@ -15,7 +15,7 @@ class Transfer
     if self.valid? && (sender.balance - amount) > 0 
       sender.balance -= amount 
       receiver.balance += amount 
-      transfer.status = "complete"
+      self.status = "complete"
     end 
   end 
 end
