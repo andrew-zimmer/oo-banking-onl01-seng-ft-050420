@@ -9,7 +9,7 @@ class Transfer
  
   def valid? 
     if self == "transfer"
-      self.sender.balance - amount) > 0 && self.sender.status == "open" ? true : false 
+      (self.sender.balance - amount) > 0 && self.sender.status == "open" ? true : false 
     else 
       self.balance > 0 && self.status == "open" ? true : false 
     end 
